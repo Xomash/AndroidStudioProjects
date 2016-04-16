@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:animateLayoutChanges="true"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="xoma.myapplication02.MainActivity"
+    android:rowCount="16"
+    android:columnCount="30">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageView"
+        android:layout_row="10"
+        android:layout_column="18"
+        android:src="@drawable/toast"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Some random Txt"
+        android:id="@+id/textView"
+        android:layout_row="11"
+        android:layout_column="18" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:layout_row="14"
+        android:layout_column="18"
+        android:numStars="5"
+        android:rating="3" />
+
+    <Button
+        android:layout_width="158dp"
+        android:layout_height="62dp"
+        android:text="Do it!"
+        android:id="@+id/button"
+        android:layout_row="15"
+        android:layout_column="18" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/button2"
+        android:layout_row="10"
+        android:layout_column="29" />
+
+</GridLayout>
