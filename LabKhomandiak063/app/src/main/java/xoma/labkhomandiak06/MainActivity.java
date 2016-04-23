@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         protected Void doInBackground(Void... params) {
             try {
 
-                client = new Socket("192.168.137.1", 8080); // connect to the server
+                client = new Socket("192.168.137.1", 4444); // connect to the server
 
                 String message = "";
                 in = new BufferedReader(
